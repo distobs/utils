@@ -11,7 +11,7 @@
 #define panic(source)								\
 	fprintf(stderr, "fatal: function %s failed inside function %s " \
 			"in line %d in file %s (with ERRNO = %d)\n",	\
-			source, __LINE__, __FILE__, errno);
+			source, __func__, __LINE__, __FILE__, errno);
 
 #define trace(source) \
 	fprintf(stderr, "trace: function %s failed inside "	\
