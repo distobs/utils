@@ -6,7 +6,6 @@ int
 lread(char **out, size_t *out_sz)
 {
 	int	c;
-	size_t	idx		= 0;
 	size_t	allocated	= 0;
 	char	*s		= NULL;
 	size_t	sz		= 0;
